@@ -2,9 +2,6 @@ AWSTemplateFormatVersion: 2010-09-09
 Transform:
 - AWS::CodeStar
 
-Conditions:
-  UseSubnet: !Not [!Equals [!Ref 'SubnetId', subnet-none]]
-
 Parameters:
   ProjectId:
     Type: String
@@ -18,9 +15,9 @@ Parameters:
   VpcId:
     Type: String
     Description: The ID of the Amazon Virtual Private Cloud (VPC) used for the new Amazon EC2 Linux instances.
-  SubnetId:
-    Type: String
-    Description: The name of the VPC subnet used for the new Amazon EC2 Linux instances launched for this project.
+  SubnetIds:
+    Type: List<AWS::EC2::Subnet::Id>
+    Description: The IDs of the VPC subnets used for the new Amazon EC2 Linux instances launched for this project.
   SolutionStackName:
     Type: String
     Description: The software stack used to launch environments and configure instances in AWS Elastic Beanstalk.
@@ -57,7 +54,7 @@ Resources:
       OptionSettings:
       - Namespace: aws:elasticbeanstalk:environment
         OptionName: EnvironmentType
-        Value: SingleInstance
+        Value: LoadBalanced
       - Namespace: aws:elasticbeanstalk:environment
         OptionName: ServiceRole
         Value: !Ref 'EBTrustRole'
@@ -75,6 +72,12 @@ Resources:
       TemplateName: !Ref 'EBConfigurationTemplate'
       VersionLabel: !Ref 'EBApplicationVersion'
       OptionSettings:
+      - Namespace: aws:autoscaling:asg
+        OptionName: MinSize
+        Value: 2
+      - Namespace: aws:autosacaling:asg
+        OptionName: MaxSize
+        Value: 4
       - Namespace: aws:autoscaling:launchconfiguration
         OptionName: IamInstanceProfile
         Value: !Ref 'EBInstanceProfile'
@@ -87,9 +90,9 @@ Resources:
       - Namespace: aws:ec2:vpc
         OptionName: VPCId
         Value: !Ref 'VpcId'
-      - !If
-        - UseSubnet
-        - Namespace: 'aws:ec2:vpc'
-          OptionName: Subnets
-          Value: !Ref 'SubnetId'
-        - !Ref "AWS::NoValue"
+      - Namespace: 'aws:ec2:vpc'
+        OptionName: Subnets
+        Value: 
+          !Join
+            - ','
+            - !Ref 'SubnetIds'
