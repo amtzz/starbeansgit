@@ -75,7 +75,7 @@ Resources:
       - Namespace: aws:autoscaling:asg
         OptionName: MinSize
         Value: 2
-      - Namespace: aws:autosacaling:asg
+      - Namespace: aws:autoscaling:asg
         OptionName: MaxSize
         Value: 4
       - Namespace: aws:autoscaling:launchconfiguration
