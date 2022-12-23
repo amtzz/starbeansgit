@@ -11,7 +11,8 @@ phases:
       - mvn clean compile test
   build:
     commands:
-      - mvn war:exploded
+      - mvn compile -Pproduction
+      - mvn war:exploded -Pproduction
   post_build:
     commands:
       - cp -r .ebextensions/ target/ROOT/
