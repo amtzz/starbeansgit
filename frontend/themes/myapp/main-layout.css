@@ -55,3 +55,15 @@ vaadin-scroller[slot="drawer"][overflow~="bottom"] {
 [slot="drawer"]:is(header, footer):is(:empty) {
   display: none;
 }
+
+.sku-text {
+  font-size: x-small;
+}
+
+.buttonBar {
+  justify-content: flex-end;
+}
+
+.buttonAction {
+  align-self: flex-end;
+}

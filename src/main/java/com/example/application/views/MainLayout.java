@@ -68,14 +68,14 @@ public class MainLayout extends AppLayout {
 
 //        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
-        nav.addItem(new AppNavItem("Checkout Form", CheckoutFormView.class, "la la-credit-card"));
-        nav.addItem(new AppNavItem("Card List", CardListView.class, "la la-list"));
-        nav.addItem(new AppNavItem("Master-Detail", MasterDetailView.class, "la la-columns"));
-        nav.addItem(new AppNavItem("Person Form", PersonFormView.class, "la la-user"));
-        nav.addItem(new AppNavItem("Address Form", AddressFormView.class, "la la-map-marker"));
-        nav.addItem(new AppNavItem("Credit Card Form", CreditCardFormView.class, "la la-credit-card"));
-        nav.addItem(new AppNavItem("Image List", ImageListView.class, "la la-th-list"));
-        nav.addItem(new AppNavItem("Chat", ChatView.class, "la la-comments"));
+//        nav.addItem(new AppNavItem("Checkout Form", CheckoutFormView.class, "la la-credit-card"));
+//        nav.addItem(new AppNavItem("Card List", CardListView.class, "la la-list"));
+//        nav.addItem(new AppNavItem("Master-Detail", MasterDetailView.class, "la la-columns"));
+//        nav.addItem(new AppNavItem("Person Form", PersonFormView.class, "la la-user"));
+//        nav.addItem(new AppNavItem("Address Form", AddressFormView.class, "la la-map-marker"));
+//        nav.addItem(new AppNavItem("Credit Card Form", CreditCardFormView.class, "la la-credit-card"));
+//        nav.addItem(new AppNavItem("Image List", ImageListView.class, "la la-th-list"));
+//        nav.addItem(new AppNavItem("Chat", ChatView.class, "la la-comments"));
 
         return nav;
     }
