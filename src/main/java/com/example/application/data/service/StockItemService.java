@@ -31,6 +31,21 @@ public class StockItemService {
         return repository.save(entityToSave);
     }
 
+    public StockItem sellProduct(StockItem entity) {
+        StockItem entityToSave = repository.findItemByStoreAndProduct(entity.getStore().getId(), entity.getProduct().getId());
+
+        if (entityToSave == null) {
+            throw new RuntimeException("Product not registered in stock");
+        }
+
+        final int newAmount = entityToSave.getAmount() - entity.getAmount();
+        if (newAmount < 0) {
+            throw new RuntimeException("Not enough stock to fulfill this order");
+        }
+        entityToSave.setAmount(newAmount);
+        return repository.save(entityToSave);
+    }
+
     public Optional<StockItem> get(UUID id) {
         return repository.findById(id);
     }

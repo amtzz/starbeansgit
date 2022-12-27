@@ -13,6 +13,7 @@ import com.example.application.views.imagelist.ImageListView;
 import com.example.application.views.masterdetail.MasterDetailView;
 import com.example.application.views.personform.PersonFormView;
 import com.example.application.views.stock.InboundStockView;
+import com.example.application.views.stock.OutboundStockView;
 import com.example.application.views.stock.StockView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -64,7 +65,7 @@ public class MainLayout extends AppLayout {
 
         nav.addItem(new AppNavItem("Global Stock", StockView.class, "la la-globe"));
         nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
-        nav.addItem(new AppNavItem("Sales", StockView.class, "las la-sign-out-alt"));
+        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
 
 //        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
