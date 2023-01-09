@@ -20,7 +20,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  */
 @SpringBootApplication
 @Theme(value = "myapp")
-@PWA(name = "My App", shortName = "My App", offlineResources = {})
+//@PWA(name = "My App", shortName = "My App", offlineResources = {})
 //@Push
 @Push(transport = Transport.LONG_POLLING)
 @NpmPackage(value = "line-awesome", version = "1.3.0")
