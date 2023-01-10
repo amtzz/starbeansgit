@@ -21,7 +21,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 @Theme(value = "myapp")
 //@PWA(name = "My App", shortName = "My App", offlineResources = {})
-@Push
+//@Push
 //@Push(transport = Transport.LONG_POLLING)
 @NpmPackage(value = "line-awesome", version = "1.3.0")
 @NpmPackage(value = "@vaadin-component-factory/vcf-nav", version = "1.0.6")
