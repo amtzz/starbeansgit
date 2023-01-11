@@ -101,7 +101,7 @@ insert into sample_person(id,first_name,last_name,email,phone,date_of_birth,occu
 
 insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2451', 'Sucursal Palmas', 'Palmas 258');
 insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2452', 'Sucursal Polanco', 'Masaryk 125');
-insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2452', 'Sucursal Reforma', 'Reforma 222');
+insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2453', 'Sucursal Reforma', 'Reforma 222');
 
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2451', 'Gansito', 10.0, 20, 80);
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2452', 'Pinguinos', 12.0, 10, 50);
