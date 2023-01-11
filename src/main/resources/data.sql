@@ -123,25 +123,25 @@ insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-
 insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2458', '78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2458', 80);
 insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2459', '78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2459', 70);
 
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2451', 100);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2452', 50);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2453', 20);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2454', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2454', 70);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2455', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2455', 40);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2456', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2456', 30);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2457', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2457', 150);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2458', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2458', 80);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2459', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2459', 70);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2451', 100);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2452', 50);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2453', 20);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2454', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2454', 70);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2455', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2455', 40);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2456', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2456', 30);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2457', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2457', 150);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2458', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2458', 80);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8713-a58dff9a2459', '78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2459', 70);
 
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2451', 100);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2452', 50);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2453', 20);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2454', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2454', 70);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2455', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2455', 40);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2456', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2456', 30);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2457', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2457', 150);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2458', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2458', 80);
-insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2459', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2459', 70);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2451', 100);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2452', 50);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2453', 20);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2454', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2454', 70);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2455', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2455', 40);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2456', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2456', 30);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2457', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2457', 150);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2458', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2458', 80);
+insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2459', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2459', 70);
 
 
 
