@@ -74,10 +74,10 @@ Resources:
       OptionSettings:
       - Namespace: aws:autoscaling:asg
         OptionName: MinSize
-        Value: 2
+        Value: 4
       - Namespace: aws:autoscaling:asg
         OptionName: MaxSize
-        Value: 4
+        Value: 6
       - Namespace: aws:autoscaling:launchconfiguration
         OptionName: IamInstanceProfile
         Value: !Ref 'EBInstanceProfile'
