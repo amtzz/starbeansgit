@@ -99,10 +99,6 @@ insert into sample_person(id,first_name,last_name,email,phone,date_of_birth,occu
 insert into sample_person(id,first_name,last_name,email,phone,date_of_birth,occupation,important) values ('f2cb8976-ff50-4779-84b2-cf6f5e91b53d','Helen','Zanieri','helen.zanieri@ukve.tn','(619) 506-4452','1968-03-13','Healthcare Social Worker',false);
 insert into sample_person(id,first_name,last_name,email,phone,date_of_birth,occupation,important) values ('78484397-fe8d-4540-8712-a58dff9a2451','Agnes','Toccafondi','agnes.toccafondi@viipo.ae','(616) 688-6883','1970-04-02','Comedian',false);
 
-insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2451', 'Sucursal Palmas', 'Palmas 258');
-insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2452', 'Sucursal Polanco', 'Masaryk 125');
-insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2453', 'Sucursal Reforma', 'Reforma 222');
-
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2451', 'Gansito', 10.0, 20, 80);
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2452', 'Pinguinos', 12.0, 10, 50);
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2453', 'Chocoroles', 15.00, 10, 50);
@@ -112,6 +108,10 @@ insert into product(id, name, price, minimum_stock, replenish_amount) values ('7
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2457', 'CocaCola', 20.0, 30, 80);
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2458', 'Mundet', 25.0, 15, 40);
 insert into product(id, name, price, minimum_stock, replenish_amount) values ('78484397-fe8d-4540-8712-a58dff9a2459', 'Pepsi', 30.00, 20, 45);
+
+insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2451', 'Sucursal Palmas', 'Palmas 258');
+insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2452', 'Sucursal Polanco', 'Masaryk 125');
+insert into store(id, name, address) values ('78484397-fe8d-4540-8712-a58dff9a2453', 'Sucursal Reforma', 'Reforma 222');
 
 insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2451', 100);
 insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2452', 50);
@@ -143,6 +143,8 @@ insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-
 insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2458', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2458', 80);
 insert into stock_item(id, store_id, product_id, amount) values ('78484397-fe8d-4540-8714-a58dff9a2459', '78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2459', 70);
 
-
+insert into user_data(id, store_id, username, password, first_name, last_name, email) values ('78484397-fe8d-4540-8712-a58dff9a2451', '78484397-fe8d-4540-8712-a58dff9a2451', 'palmas', 'palmas', 'Juan', 'Gomez', 'jgomez@gmail.com');
+insert into user_data(id, store_id, username, password, first_name, last_name, email) values ('78484397-fe8d-4540-8712-a58dff9a2452', '78484397-fe8d-4540-8712-a58dff9a2452', 'polanco', 'polanco', 'Pedro', 'Gomez', 'pgomez@gmail.com');
+insert into user_data(id, store_id, username, password, first_name, last_name, email) values ('78484397-fe8d-4540-8712-a58dff9a2453', '78484397-fe8d-4540-8712-a58dff9a2453', 'reforma', 'reforma', 'Hugo', 'Gomez', 'hgomez@gmail.com');
 
 

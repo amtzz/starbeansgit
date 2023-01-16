@@ -49,7 +49,7 @@ public class MainLayout extends AppLayout {
     }
 
     private void addDrawerContent() {
-        H1 appName = new H1("My App");
+        H1 appName = new H1("Live Stock");
         appName.addClassNames(LumoUtility.FontSize.LARGE, LumoUtility.Margin.NONE);
         Header header = new Header(appName);
 
@@ -69,6 +69,7 @@ public class MainLayout extends AppLayout {
 
 //        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
+        nav.addItem(new AppNavItem("Logout", LogoutView.class, "la la-times-circle"));
 //        nav.addItem(new AppNavItem("Checkout Form", CheckoutFormView.class, "la la-credit-card"));
 //        nav.addItem(new AppNavItem("Card List", CardListView.class, "la la-list"));
 //        nav.addItem(new AppNavItem("Master-Detail", MasterDetailView.class, "la la-columns"));

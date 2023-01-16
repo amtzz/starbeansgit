@@ -4,6 +4,7 @@ import com.example.application.data.entity.Product;
 import com.example.application.data.entity.StockItem;
 import com.example.application.data.entity.Store;
 import com.example.application.data.service.ProductService;
+import com.example.application.data.service.SessionService;
 import com.example.application.data.service.StockItemService;
 import com.example.application.data.service.StoreService;
 import com.example.application.views.MainLayout;
@@ -36,20 +37,23 @@ public class OutboundStockView extends Div {
     private TextField amountField;
     private Store store;
 
+    private final SessionService sessionService;
     private final StockItemService stockItemService;
     private final ProductService productService;
     private final StoreService storeService;
     private Map<String, StockItem> saleItems;
 
     @Autowired
-    public OutboundStockView(StockItemService stockItemService, ProductService productService, StoreService storeService) {
+    public OutboundStockView(SessionService sessionService, StockItemService stockItemService, ProductService productService, StoreService storeService) {
+        this.sessionService = sessionService;
         this.stockItemService = stockItemService;
         this.productService = productService;
         this.storeService = storeService;
 
-        storeService.get(UUID.fromString("78484397-fe8d-4540-8712-a58dff9a2451"))
-                .ifPresentOrElse(currentStore -> this.store = currentStore,
-                () -> Notification.show("Store not found!!"));
+        store = sessionService.getUser().getStore();
+//        storeService.get(UUID.fromString("78484397-fe8d-4540-8712-a58dff9a2451"))
+//                .ifPresentOrElse(currentStore -> this.store = currentStore,
+//                () -> Notification.show("Store not found!!"));
         saleItems = new LinkedHashMap<>();
 
         addClassNames("checkout-form-view", "flex", "flex-col", "h-full");
