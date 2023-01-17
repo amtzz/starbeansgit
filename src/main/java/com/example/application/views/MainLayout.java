@@ -56,19 +56,12 @@ public class MainLayout extends AppLayout {
         AppNav nav = new AppNav();
 
         nav.addItem(new AppNavItem("Global Stock", StockView.class, "la la-globe"));
-<<<<<<< HEAD
+
         //nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
         //nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
         nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-truck"));
         nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-shopping-cart"));
         // ghjgkjhghjkh;
-=======
-        nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
-        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
-//        nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-truck"));
-//        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-shopping-cart"));
-//        ghjgkjhghjkh
->>>>>>> 2c7cc22caa0a600a2153f57c3c03f79838422e89
 
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
         nav.addItem(new AppNavItem("Logout", LogoutView.class, "la la-times-circle"));
