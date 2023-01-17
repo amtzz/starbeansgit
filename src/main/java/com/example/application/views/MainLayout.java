@@ -4,14 +4,6 @@ package com.example.application.views;
 import com.example.application.components.appnav.AppNav;
 import com.example.application.components.appnav.AppNavItem;
 import com.example.application.views.about.AboutView;
-import com.example.application.views.addressform.AddressFormView;
-import com.example.application.views.cardlist.CardListView;
-import com.example.application.views.chat.ChatView;
-import com.example.application.views.checkoutform.CheckoutFormView;
-import com.example.application.views.creditcardform.CreditCardFormView;
-import com.example.application.views.imagelist.ImageListView;
-import com.example.application.views.masterdetail.MasterDetailView;
-import com.example.application.views.personform.PersonFormView;
 import com.example.application.views.stock.InboundStockView;
 import com.example.application.views.stock.OutboundStockView;
 import com.example.application.views.stock.StockView;
@@ -64,20 +56,13 @@ public class MainLayout extends AppLayout {
         AppNav nav = new AppNav();
 
         nav.addItem(new AppNavItem("Global Stock", StockView.class, "la la-globe"));
-        nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
-        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
+//        nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
+//        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
+        nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-truck"));
+        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-shopping-cart"));
 
-//        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
         nav.addItem(new AppNavItem("Logout", LogoutView.class, "la la-times-circle"));
-//        nav.addItem(new AppNavItem("Checkout Form", CheckoutFormView.class, "la la-credit-card"));
-//        nav.addItem(new AppNavItem("Card List", CardListView.class, "la la-list"));
-//        nav.addItem(new AppNavItem("Master-Detail", MasterDetailView.class, "la la-columns"));
-//        nav.addItem(new AppNavItem("Person Form", PersonFormView.class, "la la-user"));
-//        nav.addItem(new AppNavItem("Address Form", AddressFormView.class, "la la-map-marker"));
-//        nav.addItem(new AppNavItem("Credit Card Form", CreditCardFormView.class, "la la-credit-card"));
-//        nav.addItem(new AppNavItem("Image List", ImageListView.class, "la la-th-list"));
-//        nav.addItem(new AppNavItem("Chat", ChatView.class, "la la-comments"));
 
         return nav;
     }
