@@ -56,8 +56,8 @@ public class MainLayout extends AppLayout {
         AppNav nav = new AppNav();
 
         nav.addItem(new AppNavItem("Global Stock", StockView.class, "la la-globe"));
-//        nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
-//        nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
+//      nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-sign-in-alt"));
+//      nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
         nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-truck"));
         nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-shopping-cart"));
 
