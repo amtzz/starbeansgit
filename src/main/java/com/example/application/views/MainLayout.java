@@ -60,7 +60,7 @@ public class MainLayout extends AppLayout {
         //nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-sign-out-alt"));
         nav.addItem(new AppNavItem("Arrivals", InboundStockView.class, "las la-truck"));
         nav.addItem(new AppNavItem("Sales", OutboundStockView.class, "las la-shopping-cart"));
-
+        //errorsyntaxis;
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
         nav.addItem(new AppNavItem("Logout", LogoutView.class, "la la-times-circle"));
 
