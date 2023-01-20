@@ -2,8 +2,11 @@ package com.example.application.views.stock;
 
 import com.example.application.data.entity.SamplePerson;
 import com.example.application.data.entity.StockItem;
+import com.example.application.data.entity.UserData;
+import com.example.application.data.service.SessionService;
 import com.example.application.data.service.StockItemService;
 import com.example.application.views.MainLayout;
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.GridVariant;
@@ -30,11 +33,16 @@ public class StockView extends Div implements BeforeEnterObserver {
 
     private SamplePerson samplePerson;
 
+    private final SessionService sessionService;
+
     private final StockItemService stockItemService;
 
     @Autowired
-    public StockView(StockItemService stockItemService) {
+    public StockView(SessionService sessionService, StockItemService stockItemService) {
+        this.sessionService = sessionService;
         this.stockItemService = stockItemService;
+        initializeStore(sessionService);
+
         addClassNames("master-detail-view");
 
         // Create UI
@@ -98,6 +106,15 @@ public class StockView extends Div implements BeforeEnterObserver {
 //            }
 //        });
 
+    }
+
+    private void initializeStore(SessionService sessionService) {
+        final UserData user = sessionService.getUser();
+        if (user == null) {
+            UI.getCurrent().getSession().getSession().invalidate();
+            UI.getCurrent().getPage().setLocation("/");
+            return;
+        }
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.example.application.views.stock;
 import com.example.application.data.entity.Product;
 import com.example.application.data.entity.StockItem;
 import com.example.application.data.entity.Store;
+import com.example.application.data.entity.UserData;
 import com.example.application.data.service.ProductService;
 import com.example.application.data.service.SessionService;
 import com.example.application.data.service.StockItemService;
@@ -10,6 +11,7 @@ import com.example.application.data.service.StoreService;
 import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Key;
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.html.*;
@@ -50,7 +52,7 @@ public class OutboundStockView extends Div {
         this.productService = productService;
         this.storeService = storeService;
 
-        store = sessionService.getUser().getStore();
+        initializeStore(sessionService);
 //        storeService.get(UUID.fromString("78484397-fe8d-4540-8712-a58dff9a2451"))
 //                .ifPresentOrElse(currentStore -> this.store = currentStore,
 //                () -> Notification.show("Store not found!!"));
@@ -65,6 +67,16 @@ public class OutboundStockView extends Div {
         content.add(createCheckoutForm());
         content.add(createAside());
         add(content);
+    }
+
+    private void initializeStore(SessionService sessionService) {
+        final UserData user = sessionService.getUser();
+        if (user == null) {
+            UI.getCurrent().getSession().getSession().invalidate();
+            UI.getCurrent().getPage().setLocation("/");
+            return;
+        }
+        store = user.getStore();
     }
 
     private Component createCheckoutForm() {
